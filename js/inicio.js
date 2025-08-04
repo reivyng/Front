@@ -3,11 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// Toggle menu móvil
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+
 
 // Cerrar menu al hacer click en un enlace
 navLinks.forEach(link => {
@@ -107,22 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Funcionalidad para el botón "Partida Rápida"
-    if (btnPartidaRapida) {
-        btnPartidaRapida.addEventListener('click', () => {
-            console.log('Navegando a Partida Rápida...');
-            window.location.href = './partida_rapida.html';
-        });
-    }
-    
-    // Funcionalidad para el botón "Muerte Súbita"
-    if (btnMuerteSubita) {
-        btnMuerteSubita.addEventListener('click', () => {
-            console.log('Modo Muerte Súbita seleccionado');
-            // Aquí puedes agregar la lógica para Muerte Súbita
-            alert('Modo Muerte Súbita - Funcionalidad por implementar');
-        });
-    }
 });
 
 // Efecto de escritura en el título
@@ -148,4 +128,22 @@ window.addEventListener('load', () => {
         const originalText = heroTitle.textContent;
         typeWriter(heroTitle, originalText, 80);
     }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById('btn-partida-rapida');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      window.location.href = '../paginas/partida_rapida.html';
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById('btn-muerte-subita');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      window.location.href = '../paginas/muerte_subita.html';
+    });
+  }
 });

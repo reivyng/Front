@@ -2,14 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Partida Rápida</title>
-  <link rel="stylesheet" href="../css/partida_rapida.css">
+  <title>Muerte Súbita</title>
+  <link rel="stylesheet" href="../css/muerte_subita.css">
 </head>
 <body>
-  <div class="decoracion-esquina decoracion-izq"></div>
-  <div class="decoracion-esquina decoracion-der"></div>
-  <img src="../img/Bombardiro_Crocodilo.png" alt="Avión" class="imagen-lateral imagen-izquierda">
-  <img src="../img/Tung_sahur.png" alt="Personaje" class="imagen-lateral imagen-derecha">
+  <img src="../img/Tung-Tung-Bigahur.png" alt="Personaje 1" class="imagen-lateral imagen-izquierda">
+  <img src="../img/Din-Din-BigaDin.png" alt="Personaje 2" class="imagen-lateral imagen-derecha">
 
   <main class="contenedor">
     <div class="selector-jugadores">
@@ -17,23 +15,22 @@
       <select id="jugadores" class="dropdown-jugadores">
         <option value="2">2</option>
         <option value="3">3</option>
-        <option value="4">4</option>        
+        <option value="4">4</option>
         <option value="4">5</option>
         <option value="4">6</option>
         <option value="4">7</option>
       </select>
     </div>
-    <h2 class="titulo-modo">PARTIDA RAPIDA</h2>
+    <h2 class="titulo-modo">MODO DE JUEGO</h2>
     <div class="botones-modo">
-      <button class="btn-modo" id="btn-muerte_subita">Muerte Subita</button>
       <button class="btn-modo" id="btn-volver">Volver</button>
+      <button class="btn-modo" id="btn-partida-rapida">Partida rápida</button>
     </div>
-    
     <button class="btn-siguiente">
       SIGUIENTE <span class="flecha">&#9654;</span>
     </button>
   </main>
 
-  <script src="../js/partida_rapida.js"></script>
+  <script src="../js/muerte_subita.js"></script>
 </body>
 </html>
