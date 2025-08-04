@@ -130,20 +130,3 @@ window.addEventListener('load', () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const btn = document.getElementById('btn-partida-rapida');
-  if (btn) {
-    btn.addEventListener('click', function() {
-      window.location.href = '../paginas/partida_rapida.html';
-    });
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const btn = document.getElementById('btn-muerte-subita');
-  if (btn) {
-    btn.addEventListener('click', function() {
-      window.location.href = '../paginas/muerte_subita.html';
-    });
-  }
-});
