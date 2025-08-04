@@ -8,37 +8,33 @@
 <body>
   <div class="avatar-container">
     <button class="btn-inicio" id="btn-inicio">INICIO</button>
-    <div class="avatar-layout">
-      <!-- Imagen grande a la izquierda -->
-      <div class="avatar-left">
-        <img src="URL_IMAGEN_IZQUIERDA" alt="Avatar grande" class="avatar-grande">
+    <!-- Ejemplo de avatar-grid -->
+    <div class="avatar-grid">
+      <div class="avatar-item" data-avatar="../img/forest.png"><img src="../img/forest.png" alt="Avatar 1"></div>
+      <div class="avatar-item" data-avatar="../img/JEFERSON_ORTIZ.png"><img src="../img/JEFERSON_ORTIZ.png" alt="Avatar 2"></div>
+      <div class="avatar-item"><img src="../img/JUAN.png" alt="Avatar 3"></div>
+      <div class="avatar-item"><img src="../img/julito.png" alt="Avatar 4"></div>
+      <div class="avatar-item"><img src="../img/licenciado.png" alt="Avatar 5"></div>
+      <div class="avatar-item"><img src="../img/pedro.png" alt="Avatar 6"></div>
+      <div class="avatar-item"><img src="../img/SANTIAGO.png" alt="Avatar 7"></div>
+      <div class="avatar-item"><img src="../img/SEBASTIAN.png" alt="Avatar 8"></div>
+      <div class="avatar-item"><img src="../img/Shrek.png" alt="Avatar 9"></div>
+    </div>
+    <div class="avatar-preview-section">
+      
+      <img src="../img/forest.png" alt="Avatar Seleccionado" class="avatar-preview" id="avatar-preview">
+
+      <div class="nombre-jugador">
+        <span class="jugador-label">Jugador 1</span>
+        <input type="text" class="input-nombre" placeholder="Editar Nombre">
+        <button class="btn-editar"><span>&#9998;</span></button>
       </div>
-      <!-- Grid de avatares a la derecha -->
-      <div class="avatar-right">
-        <div class="avatar-grid">
-          <div class="avatar-item"><img src="URL_AVATAR_1" alt="Avatar 1"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_2" alt="Avatar 2"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_3" alt="Avatar 3"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_4" alt="Avatar 4"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_5" alt="Avatar 5"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_6" alt="Avatar 6"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_7" alt="Avatar 7"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_8" alt="Avatar 8"></div>
-          <div class="avatar-item"><img src="URL_AVATAR_9" alt="Avatar 9"></div>
-        </div>
-        <div class="avatar-preview-section">
-          <div class="nombre-jugador">
-            <span class="jugador-label">Jugador 1</span>
-            <input type="text" class="input-nombre" placeholder="Editar Nombre">
-            <button class="btn-editar"><span>&#9998;</span></button>
-          </div>
-          <button class="btn-guardar">
-            GUARDAR <span class="flecha">&#9654;</span>
-          </button>
-        </div>
-      </div>
+      <button class="btn-guardar">
+        GUARDAR <span class="flecha">&#9654;</span>
+      </button>
     </div>
   </div>
+
   <script src="../js/general.js"></script>
   <script src="../js/avatares.js"></script>
 </body>
