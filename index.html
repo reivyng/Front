@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga 3D - Rueda Circular</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="loading-container" id="loadingContainer">
+        <div class="wheel-3d">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        
+        <div class="loading-text">
+            <span>Cargando</span>
+            <span class="dots">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </span>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="welcome-page" id="welcomePage">
+        <div class="welcome-content">
+            <h1>¡Bienvenido!</h1>
+            <p>La carga se ha completado exitosamente</p>
+            <button class="explore-btn" onclick="goToMainPage()">Explorar</button>
+        </div>
+    </div>
+
+    <div class="main-page" id="mainPage">
+        <div class="main-content">
+            <h1>Página Principal</h1>
+            <p>Has llegado a la página principal de la aplicación</p>
+            <button class="back-btn" onclick="goBack()">Volver al inicio</button>
+        </div>
+    </div>
+
+    <script src="./js/scrpt.js"></script>
+</body>
+</html>
