@@ -135,7 +135,6 @@ body {
 
 .imagen-derecha {
   right: 0;
-  bottom: 10;
 }
 
 @media (max-width: 900px) {

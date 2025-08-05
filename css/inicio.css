@@ -166,58 +166,7 @@ body::before {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* Elementos decorativos flotantes */
-.decoracion {
-  position: absolute;
-  color: #8b4513;
-  opacity: 0.4;
-  animation: float 6s ease-in-out infinite;
-  pointer-events: none;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
 
-.decoracion:nth-child(1) {
-  top: 10%;
-  left: 5%;
-  animation-delay: 0s;
-}
-
-.decoracion:nth-child(2) {
-  top: 20%;
-  right: 10%;
-  font-size: 1.5rem;
-  animation-delay: -2s;
-}
-
-.decoracion:nth-child(3) {
-  bottom: 15%;
-  left: 8%;
-  font-size: 1.8rem;
-  animation-delay: -4s;
-}
-
-.decoracion:nth-child(4) {
-  bottom: 25%;
-  right: 5%;
-  font-size: 2.2rem;
-  animation-delay: -1s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-    opacity: 0.4;
-  }
-  33% {
-    transform: translateY(-10px) rotate(5deg);
-    opacity: 0.6;
-  }
-  66% {
-    transform: translateY(5px) rotate(-3deg);
-    opacity: 0.5;
-  }
-}
 
 /* Responsive */
 @media (max-width: 768px) {

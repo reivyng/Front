@@ -1,17 +1,6 @@
 // Variables globales
-const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-
-
-
-// Cerrar menu al hacer click en un enlace
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    });
-});
 
 // Scroll suave para los enlaces de navegación
 navLinks.forEach(link => {
@@ -72,19 +61,14 @@ document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// Función para volver a la página de carga
-function volverACarga() {
-    window.location.href = '../index.html';
-}
+
 
 // Funciones para los botones del hero
 document.addEventListener('DOMContentLoaded', () => {
     const btnPrimary = document.querySelector('.btn-primary');
     const btnSecondary = document.querySelector('.btn-secondary');
     
-    // Botones de modo de juego
-    const btnPartidaRapida = document.getElementById('btn-partida-rapida');
-    const btnMuerteSubita = document.getElementById('btn-muerte-subita');
+
     
     if (btnPrimary) {
         btnPrimary.addEventListener('click', () => {
